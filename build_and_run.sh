@@ -10,7 +10,7 @@ EXECUTABLE="main"
 mkdir -p $BUILD_DIR
 
 # Compile the program
-g++ -I $INCLUDE_DIR $SOURCE_DIR/main.cpp -o $BUILD_DIR/$EXECUTABLE
+g++ -I $INCLUDE_DIR $SOURCE_DIR/*.cpp -o $BUILD_DIR/$EXECUTABLE
 
 # Run the program
 ./$BUILD_DIR/$EXECUTABLE
